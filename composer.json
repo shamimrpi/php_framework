@@ -1,0 +1,19 @@
+{
+    "name": "zyma/zyma",
+    "description": "This is php custom framework",
+    "authors": [
+        {
+            "name": "Md. Shamim Miah"
+        }
+    ],
+    "require": {
+        "php": "7.4.*", 
+        "illuminate/database": "^10.31"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Foundation\\": "foundation/"
+        }
+    }
+}

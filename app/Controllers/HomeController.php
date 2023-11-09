@@ -6,7 +6,7 @@ use App\Models\User;
 
   class HomeController {
     public function index() {
-        $users = User::all();
+        $users = User::get();
         print_r($users);
         die();
         echo 'Welcome to the home page.';

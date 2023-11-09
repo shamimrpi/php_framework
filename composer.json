@@ -7,8 +7,9 @@
         }
     ],
     "require": {
-        "php": "7.4.*", 
-        "illuminate/database": "^10.31"
+        "php": "8.2.*", 
+        "illuminate/database": "^10.31",
+        "illuminate/events": "^10.31"
     },
     "autoload": {
         "psr-4": {

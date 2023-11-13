@@ -23,7 +23,7 @@ use App\Models\Category;
     public function about() {
         $category = Category::select('id','name')->with('products:id,name,category_id')->limit(10)->get();
         pr($category); 
-        echo 'Welcome to the about page.';
+        echo 'Welcome to the about page.' ;
     }
 
     public function category(){
@@ -33,7 +33,7 @@ use App\Models\Category;
 
     public function category_store(){
             if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-                    // pr(request()['name']);
+                    // pr(request()['name']);  
                     $model = new Category();
                     $model->name = request()['name'];
                     $model->save();

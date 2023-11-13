@@ -7,7 +7,7 @@
         }
     ],
     "require": {
-        "php": "8.2.*", 
+        "php": "8.1.*", 
         "illuminate/database": "^10.31",
         "illuminate/events": "^10.31"
     },
@@ -15,6 +15,10 @@
         "psr-4": {
             "App\\": "app/",
             "Foundation\\": "foundation/"
-        }
+        },
+         "files": [
+            "app/helpers/functions.php"
+        ]
     }
+
 }

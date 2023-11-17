@@ -56,3 +56,7 @@ function language(){
     
     return $language = new Language('bn');
 }
+
+function trans($key){
+    return language()->get($key) ;
+}

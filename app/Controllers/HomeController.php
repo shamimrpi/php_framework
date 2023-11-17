@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Models\User;
 use App\Models\Category;
+use Foundation\Session;
 
 
   class HomeController {
@@ -15,9 +16,13 @@ use App\Models\Category;
     public function index() {
         $users = User::get();
         // pr($users);
-        echo language()->get('welcome');
+        echo trans('welcome');
         echo '<br />';
         echo 'Welcome to the home page.';
+
+        // Session::put('session','shamim');
+        // echo Session::get('session');
+
     }
 
     public function about() {
